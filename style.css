@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  overflow: hidden;
+  background: rgb(168, 255, 255);
+  transition: .10s;
+  user-select: none;
+}
+input[type="checkbox"] {display: none;}
+  .bi {
+    font-size: 1.3rem;
+    all: unset;
+    border: 0.5vh solid transparent;
+    width: 20vh;
+    height: 20vh;
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
+    border-radius: 50%;
+}
+  .bi-moon {
+    cursor: pointer;
+    display: none;
+    background-color: white;
+    box-shadow: 0.2vh 0.1vh 10vh whitesmoke;
+  }
+  .dark{
+    background-color: #263238;
+    transition: .10s;
+  }
+
+  .dark .bi-sun {
+    display: none;
+  }
+  .bi-sun{
+    cursor: pointer;
+    background-color: rgb(255, 208, 0);
+    box-shadow: 0.2vh 0.1vh 10vh rgb(255, 208, 0);
+}
+  .dark .bi-moon {
+    display: block;
+  }
+#Hora,#HoraN{
+  color: black;
+  text-shadow: 0.2vh 0.2vh 0.2vh black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 4vh;
+  display: block;
+  border: 0.2vh solid transparent;
+  text-align: center;
+  margin-top:7.5vh;
+}
+.casas{
+    border: 0.2vh solid transparent;
+    border-bottom: transparent;
+    width: 25vh;
+    height: 50vh;
+    position: relative;
+    margin-top: 18vh;
+    display: inline-table;
+    border-radius: 2vh 2vh 0 0;
+}
+#CasasM{
+  border: 0.2vh solid transparent;
+  width: 154.5vh;
+  display: block;
+  margin: auto;
+}
+.casas > a{
+    border: 0.2vh solid black;
+    display: block;
+    height: 2.6vh;
+    margin: auto;
+    margin-top: 3.6vh;
+    background-image: linear-gradient(to left,white,black,black,black,black,white);
+    width: 80%;
+}
+#Chão{
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: #31393d;
+    height: 25vh;
+    margin-top: -1vh;
+}
+@media (min-width:0px) and (max-width:640px ){
+  .casas:nth-child(1){display: none;}
+  .casas:nth-child(2){display: none;}
+  .casas:nth-child(3){display: none;}
+  .casas:nth-child(4){display: none;}
+  .casas:nth-child(5){display: none;}
+}
+@media (min-width:640px) and (max-width:1000px ){
+  .casas:nth-child(1){display: none;}
+  .casas:nth-child(2){display: none;}
+  .casas:nth-child(3){display: none;}
+}
+@media (min-width:1000px) and (max-width:1200px ){
+  .casas:nth-child(1){display: none;}
+}
+@media (min-width:1200px) and (max-width:1400px ) {
+  .casas:nth-child(3){display: none;}
+}
